@@ -22,6 +22,10 @@ app.use("/api/categorias", categoriasRoutes);
 app.use("/api/productos", productosRoutes);
 app.use("/api/proveedores", proveedoresRoutes);
 
+app.get("/", (req, res) => {
+    res.send("The company's server is running");
+});
+
 app.use(cors());
 const corsOptions = {
     origin: 'http://127.0.0.1:5500'
