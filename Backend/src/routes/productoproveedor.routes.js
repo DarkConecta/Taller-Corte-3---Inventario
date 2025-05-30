@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { methodHTTP as productoProveedorController } from "../controllers/productoProveedor.controllers.js";
+import { methodHTTP as productoProveedorController } from "../controllers/productoproveedor.controllers.js";
 
 const router = Router();
 
