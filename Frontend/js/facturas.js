@@ -42,7 +42,7 @@ async function getFacturas() {
                 <td>${idEmpleado}</td>
                 <td>${new Date(fechaFactura).toLocaleDateString()}</td>
                 <td>${numeroFactura}</td>
-                <td>$${totalFactura.toFixed(2)}</td>
+                <td>$${totalFactura}</td>
                 <td>${estado}</td>
                 <td>${new Date(fechaCreacion).toLocaleDateString()}</td>
                 <td>
@@ -64,7 +64,7 @@ async function getFacturas() {
             container.appendChild(row);
         });
     } catch (error) {
-        console.error("error");
+        console.error(error);
         const container = document.querySelector("tbody");
         container.innerHTML = '<tr><td colspan="10" class="text-center">Error al cargar facturas</td></tr>';
     }

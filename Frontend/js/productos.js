@@ -40,7 +40,7 @@ async function getProductos() {
                 <td>${idCategoria}</td>
                 <td>${nombre}</td>
                 <td>${descripcion || '-'}</td>
-                <td>$${precio.toFixed(2)}</td>
+                <td>$${precio}</td>
                 <td>${stock}</td>
                 <td>${new Date(fechaCreacion).toLocaleDateString()}</td>
                 <td>
@@ -62,7 +62,7 @@ async function getProductos() {
             container.appendChild(row);
         }
     } catch (error) {
-        console.error("error");
+        console.error(error);
         const container = document.querySelector("tbody");
         container.innerHTML = '<tr><td colspan="10" class="text-center">Error al cargar productos</td></tr>';
     }
