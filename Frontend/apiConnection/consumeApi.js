@@ -1,11 +1,11 @@
-const urlFacturas = "http://localhost:5000/api/facturas";
-const urlFacturadetalle = "http://localhost:5000/api/facturadetalle";
-const urlProductoproveedor = "http://localhost:5000/api/productoproveedor";
-const urlClientes = "http://localhost:5000/api/clientes";
-const urlEmpleados = "http://localhost:5000/api/empleados";
-const urlCategorias = "http://localhost:5000/api/categorias";
-const urlProductos = "http://localhost:5000/api/productos";
-const urlProveedores = "http://localhost:5000/api/proveedores";
+const urlFacturas = "https://taller-corte-3-inventario.onrender.com/api/facturas";
+const urlFacturadetalle = "https://taller-corte-3-inventario.onrender.com/api/facturadetalle";
+const urlProductoproveedor = "https://taller-corte-3-inventario.onrender.com/api/productoproveedor";
+const urlClientes = "https://taller-corte-3-inventario.onrender.com/api/clientes";
+const urlEmpleados = "https://taller-corte-3-inventario.onrender.com/api/empleados";
+const urlCategorias = "https://taller-corte-3-inventario.onrender.com/api/categorias";
+const urlProductos = "https://taller-corte-3-inventario.onrender.com/api/productos";
+const urlProveedores = "https://taller-corte-3-inventario.onrender.com/api/proveedores";
 
 
 export const obtainFacturas = async () => {
